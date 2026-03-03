@@ -14,11 +14,11 @@
             string username = usernameEntry.Text;
             string password = passwordEntry.Text;
 
-            if (username == "TrAndroid" && password == "12345")
+            if (username == "alejandro" && password == "12345")
             {
                 await DisplayAlert("Éxito", "¡Bienvenido! Abriendo tu canal de YouTube...", "OK");
 
-                // Esto abre tu canal directamente
+             
                 try
                 {
                     await Launcher.Default.OpenAsync("https://www.youtube.com/@AlejandroMTineoMoreta");
@@ -28,8 +28,7 @@
                     await DisplayAlert("Error", $"No pudimos abrir YouTube: {ex.Message}", "OK");
                 }
 
-                // Si quieres que después también vaya a NewPage1, descomenta esta línea:
-                // await Navigation.PushAsync(new NewPage1());
+           
             }
             else
             {
@@ -37,4 +36,5 @@
             }
         }
     }
+
 }
